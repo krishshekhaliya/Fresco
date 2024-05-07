@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>menu</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            background-image: url("/back1.png");
+        }
+
+
+        h3 {
+            width: max-content;
+            font-size: 50px;
+            position: relative;
+            margin: 10px auto;
+        }
+
+        h3::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            height: 4px;
+            width: 100%;
+            left: 0;
+            background-color: black;
+            transition: 0.3s;
+            transition-timing-function: ease-in-out;
+            transform: scaleX(0);
+
+        }
+
+        h3:hover {
+            color: darkgrey;
+        }
+
+        h3:hover::after {
+            transform: scaleX(1)
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <table align="center">
+        <tr>
+            <td align="center">
+                <a href="/home/home.html">
+                    <h3>HOME</h3>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="/login/login.html">
+                    <h3>LOGIN / SIGN UP</h3>
+                </a>
+            </td>
+        </tr>
+        <tr>
+
+            <td align="center">
+                 <a href="/shopping/shopping.html">
+                    <h3>GALLERY</h3>
+                </a>
+               
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="/team/team.html">
+                    <h3>TEAM</h3>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                 <a href="/about/about.html">
+                    <h3>ABOUT</h3>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="/contact/contact us .html">
+                    <h3>CONTACT US</h3>
+                </a>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
